@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "NodeJS Backend for Conversational Bot's Logic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "686157-U0P8F14R@Flipkard_Grid-5.0",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
