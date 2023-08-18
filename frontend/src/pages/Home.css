@@ -1,0 +1,26 @@
+.mainCont{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 10px;
+}
+.outfits{
+    width: 500px;
+    background-color: ghostwhite;
+    margin-right: 80px;
+    height: max-content;
+}
+.userChat{
+    width: 600px;
+    background-color: whitesmoke;
+    height: 600px;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
