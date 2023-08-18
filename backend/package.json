@@ -4,11 +4,16 @@
   "description": "NodeJS Backend for Conversational Bot's Logic",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "686157-U0P8F14R@Flipkard_Grid-5.0",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "openai": "^4.0.0"
   }
 }
