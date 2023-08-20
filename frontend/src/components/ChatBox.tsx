@@ -18,7 +18,7 @@ export default function ChatBox() {
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const getImage = async ()=>{
     try {
-        const response = await axios.post('http://localhost:8080/outfit/generate_outfit', {
+        const response = await axios.post(`${process.env.BASE_URL}/outfit/generate_outfit`, {
             prompt: [
                 ...messages.map(msg => ({
                     role: msg.self ? 'user' : 'system',

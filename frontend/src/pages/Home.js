@@ -8,7 +8,7 @@ const Home = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const apiUrl = "http://localhost:8080/outfit/generate_outfit";
+    const apiUrl = `${process.env.BASE_URL}/outfit/generate_outfit`;
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
