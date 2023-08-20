@@ -4,7 +4,7 @@
 The Conversational Outfit Generator is an innovative platform that utilizes the power of generative AI to offer outfit suggestions to users. With the use of OpenAI's API, the backend serves as the brain of the system, identifying outfits based on user preferences. The frontend provides a responsive user interface where individuals can interact in real-time with the chatbot, retrieving product searches and relevant images tailored to their choices.
 
 ## Diagram
-![Diagram](https://github.com/thisispriyanshu/conversational-outfit-generator/tree/main/frontent/assets/Diagram.png)
+![Diagram](https://github.com/thisispriyanshu/conversational-outfit-generator/blob/main/frontend/assets/Diagram.png)
 
 ## Tech Stack Used
 - **Backend**: Express & Node.js (Powered by OpenAI's API)
