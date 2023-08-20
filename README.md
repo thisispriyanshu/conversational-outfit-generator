@@ -15,6 +15,12 @@ The Conversational Outfit Generator is an innovative platform that utilizes the 
 - **Libraries and Tools**: TensorFlow, Keras, OpenCV, NumPy, Gunicorn
 - **Deep Learning Model**: VGG16 (pre-trained model)
 
+## Deployed URLs: 
+- **Frontend**: https://flipkart-grid-5-0-frontend.onrender.com/
+- **Backend**: https://flipkart-grid-5-0-backend.onrender.com/
+- **SimilarProductModel**: https://similar-image-model.onrender.com/get_similar
+- SimilarProductModel is not working on hosting site as it require large disk space so it is recommended to use in local system.
+
 ## Setup
 
 1. **Clone the Repository**:
