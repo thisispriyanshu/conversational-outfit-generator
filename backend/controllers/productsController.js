@@ -1,5 +1,3 @@
-// @Route POST /image
-// @Access Public
 const getProducts = async (req, res) => {
   const { prompt } = req.body;
   try {
