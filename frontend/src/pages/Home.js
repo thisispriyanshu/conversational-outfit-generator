@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import ProdCard from "../components/ProdCard";
+import ProdCard from "../components/Dashboard";
 
 const Home = () => {
   const [prompt, setPrompt] = useState("");

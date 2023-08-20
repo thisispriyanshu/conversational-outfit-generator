@@ -1,3 +1,35 @@
-.App{
+.scrollable-cards {
+    padding-left: 16px;
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+  
+.chat-box {
+    /* border: 1px solid #eee; */
+    max-height: 80vh;
+    overflow-y: scroll;
+    background-color: #ECEFF1;
+    color: #333333;
+  }
 
+.mainDashboard {
+    height: 100vh;
+    background-color: #F5F5F5;
+    padding: 0;
+}
+
+.dashBoardHeading {
+  height: 50px;
+  background-color: #1A237E;
+  color: #FFFFFF;
+}
+
+.textMessage {
+  width: fit-content;
+  max-width: 80%;
+}
+
+.App {
+    height: 100vh;
 }
