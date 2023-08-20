@@ -8,6 +8,8 @@ The Conversational Outfit Generator is an innovative platform that utilizes the 
 
 ![Diagram](https://github.com/thisispriyanshu/conversational-outfit-generator/blob/main/frontend/assets/Diagram.png)
 
+## PPT Link -: https://docs.google.com/presentation/d/145y6RT8ef1Tni_6MHoavDLwmA1vTvIXEMPjq2zyeIqk/edit?usp=sharing
+
 ## Tech Stack Used
 
 - **Backend**: Express & Node.js (Powered by OpenAI's API), Python, Flask,
