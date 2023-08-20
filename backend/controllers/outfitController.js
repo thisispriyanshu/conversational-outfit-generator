@@ -27,14 +27,14 @@ const generateOutfit = async (req, res) => {
   const { prompt } = await req.body;
   const optimizedPrompt = await getImagePrompt(prompt, res);
   // return res.json({ type: 'text', content: optimizedPrompt, self: false });
-  console.log(optimizedPrompt);
+  // console.log(optimizedPrompt);
   try {
     const result = await openai.images.generate({
       prompt: optimizedPrompt,
       n: 1,
       size: "256x256",
     });
-    console.log(result);
+    // console.log(result);
     return res.json({ type: 'image', content: result.data[0].url, self: false });
   } catch (error) {
     if (error.response) {

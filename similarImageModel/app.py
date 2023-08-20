@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import CORS from flask_cors
 import cv2
 import numpy as np
 import requests
@@ -9,6 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd  # Import the pandas library
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for your Flask app
 
 # Load the VGG16 model
 model = VGG16(weights='imagenet', include_top=False)
