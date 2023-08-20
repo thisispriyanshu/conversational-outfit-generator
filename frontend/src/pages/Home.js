@@ -8,7 +8,7 @@ const Home = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const apiUrl = `${process.env.BASE_URL}/outfit/generate_outfit`;
+    const apiUrl = `https://flipkart-grid-5-0-backend.onrender.com/outfit/generate_outfit`;
     try {
       const response = await fetch(apiUrl, {
         method: "POST",
