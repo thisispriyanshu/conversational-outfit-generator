@@ -6,6 +6,7 @@ from tensorflow.keras.applications import VGG16
 from tensorflow.keras.applications.vgg16 import preprocess_input
 from tensorflow.keras.preprocessing import image
 from sklearn.metrics.pairwise import cosine_similarity
+import pandas as pd  # Import the pandas library
 
 app = Flask(__name__)
 
@@ -31,7 +32,10 @@ def calculate_similarity(img1, img2):
 def find_similar():
     data = request.get_json()
     reference_image_url = data.get('reference_image')
-    image_urls = data.get('image_urls', [])
+    
+    # Read image URLs from the CSV file
+    df = pd.read_csv('on_sale.csv')
+    image_urls = df['image_url'].tolist()
 
     reference_img = load_and_preprocess_image(reference_image_url)
 
@@ -40,7 +44,7 @@ def find_similar():
     for url in image_urls:
         img = load_and_preprocess_image(url)
         similarity = calculate_similarity(reference_img, img)
-        if similarity > 0.7:  # Adjust the threshold to determine similarity
+        if similarity > 0.3:  # Adjust the threshold to determine similarity
             similar_images.append(url)
 
     return jsonify({'similar_images': similar_images})
